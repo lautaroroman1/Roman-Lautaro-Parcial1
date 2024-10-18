@@ -58,6 +58,7 @@ public class Gastronomia extends Servicio {
         return precioFinal;
     }
 
+    //Sobreescribí el método toString para que sean visibles los atributos de las instancias a la hora de imprimirlos.
     @Override
     public String toString() {
         return "Gastronomia{" + codServicio + ", porcentajeDescuento=" + porcentajeDescuento + ", enPromocion=" + enPromocion + ", gastronomia=" + gastronomia + ", precio=" + precio + ", diaSemDesc=" + diaSemDesc + '}';

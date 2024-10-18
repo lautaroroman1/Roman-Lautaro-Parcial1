@@ -22,12 +22,6 @@ public class Sistema {
         return lstServicio;
     }
     
-    public void mostrarLista(){
-        for (Servicio servicio: lstServicio){
-            System.out.println(servicio);
-        }
-    }
-    
     public Servicio traerServicio(String codServicio) throws Exception{
         for (Servicio servicio: lstServicio){
             if (servicio.getCodServicio().equals(codServicio)){
@@ -77,11 +71,10 @@ public class Sistema {
         lstServicio.add(new Hospedaje(hospedaje, precioPorNoche, codServicio, porcentajeDescuento, enPromocion, fecha));
         return true;
     }
-
-    @Override
-    public String toString() {
-        return "Sistema{" + "lstServicio=" + lstServicio + '}';
+    
+    public void mostrarLista(){
+        for (Servicio servicio: lstServicio){
+            System.out.println(servicio);
+        }
     }
-    
-    
 }
