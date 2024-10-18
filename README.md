@@ -55,7 +55,7 @@ El proyecto está compuesto por las siguientes clases y subclases:
     - `enPromocion`: Indica si el servicio está en promoción.
     - `fecha`: Indica la fecha del servicio.
 - **Métodos Abstractos**:
-    - `calcularPrecioFinal(LocalDate dia)`: Método abstracto para calcular el precio final del servicio, según el día.
+    - `calcularPrecioFinal`: Método abstracto para calcular el precio final correspondiente del servicio.
 
 ### 2. **Hospedaje** (Subclase de Servicio)
 
@@ -63,7 +63,7 @@ El proyecto está compuesto por las siguientes clases y subclases:
     - `hospedaje`: Tipo de hospedaje (ej. Cabaña, Habitación).
     - `precioPorNoche`: Precio por noche de hospedaje.
 - **Métodos**:
-    - `calcularPrecioFinal(LocalDate dia)`: Aplica descuentos entre semana (lunes a viernes) si el servicio está en
+    - `calcularPrecioFinal`: Aplica descuentos entre semana (lunes a viernes) si el servicio está en
       promoción.
     - `toString`: Muestra las características del hospedaje.
 
@@ -74,7 +74,7 @@ El proyecto está compuesto por las siguientes clases y subclases:
     - `precio`: Precio del servicio gastronómico.
     - `diaSemDesc`: Día de la semana en que se aplica el descuento.
 - **Métodos**:
-    - `calcularPrecioFinal(LocalDate dia)`: Aplica el porcentaje de descuento si el día corresponde al día de descuento
+    - `calcularPrecioFinal`: Aplica el porcentaje de descuento si el día corresponde al día de descuento
       y si está en promoción.
     - `toString`: Muestra las características de cierta gastronomía.
 
