@@ -20,7 +20,7 @@ public class PrimerParicalJava {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        System.out.println("PRUEBAS DE CREACIÓN:");
+        System.out.println("PRUEBAS DE CREACIÓN ---------------");
         System.out.println("Test 1-1:");
         try{
             Gastronomia gast1 = new Gastronomia("Hamburguesa", 180.0, 4, "4892", 15.0, true, LocalDate.now());
@@ -55,7 +55,7 @@ public class PrimerParicalJava {
             System.out.println(e.getMessage());
         }
         
-        System.out.println("CALCULO DE PRECIOS FINALES:");
+        System.out.println("CALCULO DE PRECIOS FINALES ---------------");
         System.out.println("Test 2-1:");
         try{
             Gastronomia gast3 = new Gastronomia("Hamburguesa criolla", 180.0, 4, "489235", 15.0, true, LocalDate.parse("2020-10-28"));
@@ -75,7 +75,7 @@ public class PrimerParicalJava {
         }
         
         
-        System.out.println("AGREGAR SERVICIOS:");
+        System.out.println("AGREGAR SERVICIOS ---------------");
         System.out.println("Test 3:");
         try{
             Sistema sys = new Sistema();
@@ -86,7 +86,7 @@ public class PrimerParicalJava {
             sys.agregarHospedaje("758972", 15.0, false, "Habitacion simple", 1000.0, LocalDate.parse("2020-10-18"));
             sys.mostrarLista();
 
-            System.out.println("CONSULTAS DE SERVICIOS:");
+            System.out.println("CONSULTAS DE SERVICIOS ---------------");
             System.out.println("Test 4-1:");
             System.out.println(sys.traerServicio(true));
             
